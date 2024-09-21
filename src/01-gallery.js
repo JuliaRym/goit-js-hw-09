@@ -93,7 +93,10 @@ const createGalleryImages = () => {
 
 createGalleryImages();
 
-const lightbox = new SimpleLightbox('ul.gallery li', {
+const lightbox = new SimpleLightbox('ul.gallery li a', {
   captionsData: 'alt',
   captionDelay: 250,
+  // captionType: 'alt',
+  // sourceAttr: 'href',
+  // overlay: true,
 });
